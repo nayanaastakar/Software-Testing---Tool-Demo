@@ -106,9 +106,9 @@ public class PIMPage {
 
         try {
 
-            Thread.sleep(5000);
+            wait.until(ExpectedConditions.urlContains("viewPersonalDetails"));
 
-            return driver.getCurrentUrl().contains("viewPersonalDetails");
+            return true;
 
         } catch (Exception e) {
 
